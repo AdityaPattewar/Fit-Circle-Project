@@ -1,5 +1,7 @@
 package com.flexforce.controller;
 
+import io.github.cdimascio.dotenv.Dotenv;
+
 import java.net.URI;
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
@@ -9,8 +11,14 @@ import org.json.JSONObject;
 
 public class AuthControllerlogin {
 
-    private static final String API_KEY =
-            "AIzaSyC2-ktfIIgp62zRq7wA3sxI00JILCHUfX0";
+
+   //  private static final Dotenv dotenv = Dotenv.load();
+
+     private static final Dotenv dotenv =
+        Dotenv.configure()
+              .directory("fit-circle")
+              .load();
+     private static final String API_KEY = dotenv.get("GOOGLE_API_KEY");
 
     // Stores the Firebase UID of the currently logged-in user
     private static String currentUserId;

@@ -7,10 +7,18 @@ import java.net.http.HttpResponse;
 
 import org.json.JSONObject;
 
+import io.github.cdimascio.dotenv.Dotenv;
+
 public class AuthControllerClub {
 
-   private static final String API_KEY =
-            "AIzaSyC2-ktfIIgp62zRq7wA3sxI00JILCHUfX0";
+  
+
+            private static final Dotenv dotenv =
+        Dotenv.configure()
+              .directory("fit-circle")
+              .load();
+
+private static final String API_KEY = dotenv.get("GOOGLE_API_KEY");
 
     // =========================================================
     // CURRENT CLUB OWNER ID
