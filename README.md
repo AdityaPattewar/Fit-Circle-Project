@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="fit-circle-banner.png" alt="Fit-Circle Banner">
+</p>
+
 # 🏋️ Fit-Circle
 
 > A fitness and community platform that connects users with fitness clubs, activities, challenges, and a supportive fitness community.
