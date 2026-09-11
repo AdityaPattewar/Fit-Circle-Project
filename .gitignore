@@ -1,0 +1,20 @@
+# Java / Maven build files
+target/
+*.class
+hs_err_pid*.log
+
+# Eclipse / Java build output
+bin/
+
+# VS Code settings
+.vscode/
+**/.vscode/
+
+# Environment variables / secrets
+.env
+**/.env
+
+# Firebase service account
+firebase-demo.json
+**/firebase-demo.json
+*.log

@@ -1,0 +1,75 @@
+/* Global styling for Dialog Pane */
+.dialog-pane {
+    -fx-background-color: #101511;
+    -fx-border-color: #293029;
+    -fx-border-width: 2px;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+}
+
+/* Header styling */
+.dialog-pane .header-panel {
+    -fx-background-color: #151C24;
+    -fx-padding: 10px;
+    -fx-border-radius: 10px 10px 0 0;
+    -fx-background-radius: 10px 10px 0 0;
+}
+
+.dialog-pane .header-panel .label {
+    -fx-text-fill: #FFFFFF;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+}
+
+/* Content styling */
+.dialog-pane .content {
+    -fx-padding: 20px;
+}
+
+.dialog-pane .content .label {
+    -fx-text-fill: #B8C1CC;
+    -fx-font-size: 14px;
+}
+
+/* Buttons styling */
+.dialog-pane .button-bar {
+    -fx-padding: 15px;
+}
+
+.dialog-pane .button {
+    -fx-background-color: #1A232D;
+    -fx-text-fill: #C5CDD7;
+    -fx-font-size: 14px;
+    -fx-border-color: #2A3541;
+    -fx-border-radius: 6px;
+    -fx-background-radius: 6px;
+    -fx-padding: 6px 15px;
+    -fx-cursor: hand;
+}
+
+.dialog-pane .button:hover {
+    -fx-background-color: #25313F;
+}
+
+/* Primary/Default button (like OK) */
+.dialog-pane .button.default {
+    -fx-background-color: #C6FF00;
+    -fx-text-fill: #0B0F14;
+    -fx-border-color: #B6FF00;
+    -fx-font-weight: bold;
+}
+
+.dialog-pane .button.default:hover {
+    -fx-background-color: #A3D900;
+}
+
+/* Text fields inside dialogs (TextInputDialog) */
+.dialog-pane .text-field {
+    -fx-background-color: #0B0F14;
+    -fx-text-fill: #FFFFFF;
+    -fx-border-color: #293029;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-padding: 8px;
+    -fx-font-size: 14px;
+}
